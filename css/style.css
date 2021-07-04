@@ -1,7 +1,96 @@
 html,body {
 	height: 100%;
+	margin: 0;
+	font-size: 15px;
+	background-color: hsl(0, 0%, 95%);
 }
-
 main {
 	display: flex;
+	flex-direction: row;
+	flex: 1 1;
+	width: 70%;
+	height: 60%;
+	position: relative;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
 }
+
+
+main div {
+	height: 100%;
+	padding: 3em;
+	box-sizing: border-box;
+}
+
+
+main div:nth-child(1) {
+	background-color: hsl(31, 77%, 52%);
+	border-radius: 2% 0 0 2%;
+}
+
+
+main div:nth-child(2) {
+	background-color: hsl(184, 100%, 22%);
+}
+
+
+main div:nth-child(3) {
+	background-color: hsl(179, 100%, 13%);
+	border-radius: 0 2% 2% 0;
+
+}
+
+
+h1 {
+	font-family: 'Big Shoulders Display', cursive;
+	font-size: 2.5rem;
+	font-weight: 700;
+	color: hsl(0, 0%, 95%);
+	text-transform: uppercase;
+}
+
+
+p{
+	font-family: 'Lexend Deca', sans-serif;
+	font-size: 1rem;
+	font-weight: 400;
+	line-height: 1.7em;
+	color: hsla(0, 0%, 100%, 0.75);
+	margin-bottom: 8em;
+
+}
+
+
+
+
+button {
+	border: none;
+	padding: 1rem 2rem;
+	border-radius: 2rem;
+	cursor: pointer;
+	font-family: 'Lexend Deca', sans-serif;
+	font-size: 1rem;
+	font-weight: 400;
+
+}
+
+
+
+
+
+button.nth-1 {
+	color: hsl(31, 77%, 52%);
+}
+
+button.nth-2 {
+	color: hsl(184, 100%, 22%);
+}
+
+button.nth-3 {
+	color: hsl(179, 100%, 13%);
+}
+
+
+
+@media 
