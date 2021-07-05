@@ -4,6 +4,11 @@ html,body {
 	font-size: 15px;
 	background-color: hsl(0, 0%, 95%);
 }
+
+
+
+/******************************************************************************/
+
 main {
 	display: flex;
 	flex-direction: row;
@@ -17,10 +22,61 @@ main {
 }
 
 
+@media (max-width: 767px) {
+	main {
+		flex-direction: column;
+		width: 65%;
+		height: 100%;
+		align-items: center;
+	}
+}
+
+
+
+@media (min-width: 768px) {
+	main {
+		flex-direction: column;
+		width: 45%;
+		height: 100%;
+		align-items: center;
+	}
+}
+
+
+@media (min-width: 992px) {
+	main {
+		flex-direction: row;
+		width: 80%;
+		height: 60%;
+		justify-content: center;
+	}
+}
+
+
+
+@media (min-width: 1200px) {
+	main {
+		height: 70%;
+	}
+}
+
+
+
+
+
+/******************************************************************************/
+
+
 main div {
-	height: 100%;
+	width: 400px;
+	height: 500px;
+	display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
 	padding: 3em;
 	box-sizing: border-box;
+
 }
 
 
@@ -42,6 +98,64 @@ main div:nth-child(3) {
 }
 
 
+@media (max-width: 767px) {
+
+	main div {
+		width: auto;
+	}
+
+
+
+
+	main div:nth-child(1) {
+		border-radius: 2% 2% 0 0;
+	}
+
+	main div:nth-child(3) {
+		border-radius: 0 0 2% 2%;
+	}
+
+}
+
+
+
+@media (min-width: 768px) {
+	main div:nth-child(1) {
+		border-radius: 2% 2% 0 0;
+	}
+
+	main div:nth-child(3) {
+		border-radius: 0 0 2% 2%;
+	}
+}
+
+
+@media (min-width: 992px) {
+
+	main div:nth-child(1) {
+	background-color: hsl(31, 77%, 52%);
+	border-radius: 2% 0 0 2%;
+}
+
+main div:nth-child(3) {
+	background-color: hsl(179, 100%, 13%);
+	border-radius: 0 2% 2% 0;
+
+}
+
+}
+
+
+
+
+@media (min-width: 1200px) {
+	main div {
+		height: 100%;
+	}
+}
+
+/******************************************************************************/
+
 h1 {
 	font-family: 'Big Shoulders Display', cursive;
 	font-size: 2.5rem;
@@ -57,10 +171,42 @@ p{
 	font-weight: 400;
 	line-height: 1.7em;
 	color: hsla(0, 0%, 100%, 0.75);
-	margin-bottom: 8em;
+	width: 209px;
+}
+
+
+
+
+@media (max-width: 767px) {
+	p {
+		width: auto;
+	}
+}
+
+
+
+@media (min-width: 768px) {
+	p {
+		width: auto;
+	}
 
 }
 
+
+@media (min-width: 1200px) {
+	h1 {
+		font-size: 3.5rem;
+		margin: 0; 
+	}
+
+	p {
+		font-size: 1.3rem;
+		margin: 0;
+	}
+}
+
+
+/******************************************************************************/
 
 
 
@@ -108,4 +254,59 @@ button.nth-3:hover {
 	background-color: hsl(179, 100%, 13%);
 	border: 1px solid hsl(0, 0%, 95%);
 	color: hsl(0, 0%, 95%);
+}
+
+
+
+
+@media (min-width: 1200px) {
+	button {
+		padding: 1.5rem 3rem;
+	}
+}
+
+
+
+
+
+/******************************************************************************/
+
+
+@media (height: 325px) and (orientation: landscape) {
+	button {
+		padding: 20px !important;
+	}
+}
+
+
+@media (width: 325px) {
+	button {
+		padding: 7px !important;
+	}
+}
+
+
+
+@media (width: 320px) {
+		button {
+		padding: 4px !important;
+	}
+}
+
+
+
+
+@media (width: 280px) {
+	button {
+		padding: 3px !important;
+	}
+
+
+	h1 {
+		margin: 0;
+	}
+
+	p {
+		margin-top: 0;
+	}
 }
