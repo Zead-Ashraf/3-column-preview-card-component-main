@@ -1,6 +1,6 @@
 # Frontend Mentor - 3-column preview card component
 
-![Design preview for the 3-column preview card component coding challenge](./design/Screenshot_10.jpg)
+![Design preview for the 3-column preview card component coding challenge](https://github.com/zebra-not-donkey/3-column-preview-card-component-main/blob/main/design/Screenshot_10.png)
 
 ## Welcome! 👋
 
